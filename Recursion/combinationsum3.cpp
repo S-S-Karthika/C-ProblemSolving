@@ -1,6 +1,13 @@
 #include <iostream>
 #include <vector>
+#include <algorithm> // for std::sort
 using namespace std;
+
+
+//here k is length of the combination and n is sum
+// we have to use numbers from 1 to 9 and we can use each number only once
+// we have to find all the combinations of k numbers that sum to n
+
 
 class Solution {
 public:
@@ -31,7 +38,7 @@ public:
 int main() {
     Solution sol;
 
-    int k = 3, n = 9;
+    int k = 3, n = 5;
     vector<vector<int>> combinations = sol.combinationSum3(k, n);
 
     cout << "Combinations of " << k << " numbers that sum to " << n << ":\n";

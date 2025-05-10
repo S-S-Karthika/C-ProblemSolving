@@ -6,9 +6,8 @@ vector<int> countingbits(int n){
 
     vector<int>bits(n+1,0);
     for(int i=1 ; i<=n;i++){
-
-       bits[i]=bits[i>>1]+(i&1);
-    //     bits[i]=bits[i/2]+(i&1);
+        //bits[i]=bits[i>>1]+(i&1); // i>>1 is same as i/2.
+        bits[i]=bits[i/2]+(i&1);
        
     }
     return bits;
@@ -17,7 +16,7 @@ vector<int> countingbits(int n){
 int main(){
     int n = 5;
     vector<int> answer = countingbits(n);
-    for(int i=1;i<answer.size();i++){
+    for(int i=1;i<=n;i++){
         cout<<"The count is "<<answer[i]<<endl;
     }
    

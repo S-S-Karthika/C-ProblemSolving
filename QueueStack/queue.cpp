@@ -6,7 +6,7 @@ class Queue
 {
 private:
    int arr[SIZE];
-   int front , rear,size;
+   int front ,rear,size;
 public:
     // constructor that have the same name as the class;
     Queue(){

@@ -1,5 +1,9 @@
+
+// sum with repeation -->combination
+
 #include<iostream>
 #include<vector>
+#include<algorithm>
 using namespace std;
 
 void combinationsum1(int index,vector<int>&arr,vector<vector<int>>&result,vector<int>&ans,int target){

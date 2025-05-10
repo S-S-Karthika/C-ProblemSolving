@@ -1,5 +1,10 @@
+
+//sum without repetation -->combination
+
+
 #include<iostream>
 #include<vector>
+#include<algorithm>
 using namespace std;
 
 void combinationsum2(int index,vector<int>&arr,vector<vector<int>>&result,vector<int>&ans,int target){
@@ -10,7 +15,7 @@ void combinationsum2(int index,vector<int>&arr,vector<vector<int>>&result,vector
 	}
 	for(int i=index;i<arr.size();i++){
 		if(arr[i]>target)break;
-		if(i>index && arr[i]==arr[i-1])continue;
+		if(i>index && arr[i]==arr[i-1])continue;   //for not allowing duplicates
 		ans.push_back(arr[i]);
 		combinationsum2(i+1,arr,result,ans,target-arr[i]);    //i+1 to not allow duplicates
 		ans.pop_back();
