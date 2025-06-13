@@ -1,3 +1,6 @@
+//using set so removes duplicates
+
+
 #include<iostream>
 #include<vector>
 #include<set>
@@ -15,6 +18,19 @@ void printsubset (int index, vector<int>& arr, set<vector<int>>&result, vector<i
 	ans.pop_back();
 }
 
+//but arr should be sorted to avoid duplicates in the result
+void printsubset(int index, vector<int>& arr, vector<vector<int>>& result, vector<int>& ans) {
+    result.push_back(ans);
+
+    for(int i = index; i < arr.size(); i++) {
+        // Skip duplicates at the same level
+        if(i > index && arr[i] == arr[i - 1]) continue;
+
+        ans.push_back(arr[i]);
+        printsubset(i + 1, arr, result, ans);
+        ans.pop_back();
+    }
+}
 
 
 int main(){

@@ -8,7 +8,7 @@ vector<int> previousGreaterElement(vector<int>nums){
     vector<int> pge(n, -1); 
     stack<int> st; 
     for(int i=0;i<n;i++){
-        while (!st.empty() && nums[i]>=st.top())
+        while (!st.empty() && nums[i]>st.top())
         {
            st.pop();
         }

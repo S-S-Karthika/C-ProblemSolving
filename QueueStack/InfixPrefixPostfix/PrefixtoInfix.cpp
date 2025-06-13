@@ -34,9 +34,9 @@ string PrefixtoInfix(string prefix){
 int main(){
     string prefix ;
     // prefix="-ab";
-    // prefix="*+abc";
+    prefix="*+abc";
     // prefix="-*AB/CD";
-    prefix="/+A*BC-DE";
+    // prefix="/+A*BC-DE";
     cout<<" The prefix is "<<prefix<<endl;
     cout<<" The infix is "<<PrefixtoInfix(prefix)<<endl;
 

@@ -8,12 +8,13 @@ using namespace std;
 
 bool printsubsetsum (int index,int target, vector<int>& arr, vector<int>&ans){
 	
+	if(target==0){
+			return true;		
+	}
 	
 	if(index == arr.size() )
 	{	
-		if(target==0){
-			return true;		
-		}
+		
 		return false;
 	}
 
@@ -21,7 +22,7 @@ bool printsubsetsum (int index,int target, vector<int>& arr, vector<int>&ans){
 	if(printsubsetsum(index+1,target-arr[index],arr,ans))return true;
 	ans.pop_back();
 	if(printsubsetsum(index+1,target,arr,ans))return true;
-	
+	return false;
 }
 
 

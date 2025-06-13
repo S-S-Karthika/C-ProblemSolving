@@ -23,7 +23,7 @@ vector<int> nextGreaterElement(vector<int> & nums){
 
 
 vector<int> nextSmallerElement(vector<int> & nums){
-       int n = nums.size();
+    int n = nums.size();
     vector<int> nse(n, -1); 
     stack<int> st; 
 

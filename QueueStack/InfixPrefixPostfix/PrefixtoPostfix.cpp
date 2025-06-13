@@ -42,7 +42,7 @@ int main() {
     string prefix = "-+a*bc/de";
     //  string prefix = "*+AB-CD";
     //   string prefix = "/-ab*+def";
-    cout << "The postfix expression is: " << prefix << endl;
+    cout << "The prefix expression is: " << prefix << endl;
 
     string postfix =PrefixtoPostfix(prefix);
     if (!postfix.empty()) {

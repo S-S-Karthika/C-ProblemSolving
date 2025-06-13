@@ -69,9 +69,9 @@ string InfixtoPrefix( string infix){
 
 int main(){
     string infix;
-    // infix="a+b*(c^d-e)";
+    infix="a+b*(c^d-e)";
     // infix ="abcd^e-*+";
-    infix="abcde^*-+";
+    // infix="abcde^*-+";
 
     cout<<"The Infix is "<< infix<<endl;
     

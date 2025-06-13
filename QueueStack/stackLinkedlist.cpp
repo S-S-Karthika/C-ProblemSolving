@@ -1,85 +1,77 @@
 #include <iostream>
 using namespace std;
 
-class Node {
-private:
-    int data;
+struct Node {
+    int val;
     Node* next;
-public:
-    Node(int value) {
-        data = value;
+    
+    Node(int data) {
+        val = data;
         next = nullptr;
     }
-    int getData() const { return data; }
-    Node* getNext() const { return next; }
-    void setNext(Node* nextNode) { next = nextNode; }
 };
 
-class StackLinkedList {
+class Stack {
 private:
-    Node* topNode;
-    int stackSize;
+    Node* topnode;
 
 public:
-    StackLinkedList() {
-        topNode = nullptr;
-        stackSize = 0;
+    Stack() {
+        topnode = nullptr;
     }
 
-    ~StackLinkedList() {
-        while (topNode != nullptr) {
-            Node* temp = topNode;
-            topNode = topNode->getNext();
-            delete temp;
+    bool isEmpty() {
+        return topnode == nullptr;
+    }
+
+    void push(int data) {
+        Node* newNode = new Node(data);
+        newNode->next = topnode;
+        topnode = newNode;
+    }
+
+    void pop() {
+        if (isEmpty()) {
+            cout << "Stack is empty. Cannot pop." << endl;
+            return;
         }
+        Node* temp = topnode;
+        topnode = topnode->next;
+        delete temp;
     }
 
-    // Push operation
-    void push(int value) {
-        Node* temp = new Node(value);
-        temp->setNext(topNode);
-        topNode = temp;
-        cout << "The pushed value is " << topNode->getData() << endl;
-        stackSize++;
-    }
-
-    // Pop operation
-    int pop() {
-        if (topNode == nullptr) {
-            cout << "Stack underflow" << endl;
-            return -1;
-        } else {
-            int val = topNode->getData();
-            Node* temp = topNode;
-            topNode = topNode->getNext();
-            cout<<"poped value is "<<val<<endl;
-            delete temp;
-            stackSize--;
-            return val;
-        }
-    }
-
-    // Get the top value
-    int getTop() {
-        if (topNode == nullptr) {
-            cout << "Stack is empty" << endl;
+    int top() {
+        if (isEmpty()) {
+            cout << "Stack is empty. No top element." << endl;
             return -1;
         }
-        return topNode->getData();
+        return topnode->val;
     }
 
-    // Get the stack size
-    int getSize() const {
-        return stackSize;
+    void display() {
+        Node* curr = topnode;
+        cout << "Stack (top to bottom): ";
+        while (curr) {
+            cout << curr->val << " ";
+            curr = curr->next;
+        }
+        cout << endl;
     }
 };
 
 int main() {
-    StackLinkedList s;
-    s.push(10);
-    s.push(20);
-    s.pop();
-    cout << "Top of the stack is " << s.getTop() << endl;
-    cout << "Size of the stack is " << s.getSize() << endl;
+    Stack st;
+    st.push(10);
+    st.push(20);
+    st.push(30);
+
+    st.display(); // 30 20 10
+
+    cout << "Top element: " << st.top() << endl;
+
+    st.pop();
+    cout << "After popping:" << endl;
+    st.display(); // 20 10
+
     return 0;
 }
