@@ -1,0 +1,89 @@
+Curious Freaks coding sheet -
+docs.google/spreadsheets/d/1P3RXgZju_2OzZyJaRtu6D3Kx-Eks38X09_zJ8aj2zy8/
+edit#gid=0 - Start from basic and cover till Sliding window in the sheet before you start the below
+problems.
+geeksforgeeks/explore?page=4&amp;company=Zoho&amp;sortBy=submissions&amp;itm_sou
+rce=geeksforgeeks&amp;itm_medium=main_header&amp;itm_campaign=practice_header
+1. Diamond pattern -&gt; Try to solve few pattern questions
+2. Given an array of numbers. Print the numbers without duplication.
+3. Sort the array odd numbers in ascending and even numbers in descending.
+4. geeksforgeeks/find-number-currency-notes-sum-upto-given-amount/
+5. geeksforgeeks/program-to-convert-hexadecimal-number-to-binary/
+6. geeksforgeeks/convert-binary-number-hexadecimal-number/
+7. Sort the array elements in descending order according to their frequency of occurrence
+8. Print true if second string is a substring of first string, else print false.
+9. Find the least prime number that can be added with first array element that makes them
+divisible by second array elements at respective index
+10. Prime number – print n prime numbers
+11. Prime factor – sort the array based on the minimum factor they have
+12. TWISTED PRIME NUMBER
+13. Find the prime number in the given range. (test cases: interval is negative in range)
+14. Find the extra element and its index
+15. Move Zeroes to End of Array
+16. Find Element Appears Once
+17. leetcode/problems/single-number-ii/description/
+18. Transform String
+19. Missing Number
+20. STRING MANIPULATIONS
+21. MATRIX SORTING
+22. geeksforgeeks/problems/count-possible-triangles-1587115620/1?itm_so
+urce=geeksforgeeks&amp;itm_medium=article&amp;itm_campaign=bottom_sticky_on_article
+23. Sort the given elements in decending order based on the number of factors of each
+element
+24. Find whether the given number is palindrome or not. Don’t use arrays or strings
+25. Reverse the given string keeping the position of special characters intact
+26. Decode a string recursively encoded as count followed by substring.
+27. Given an array of integers of size n. Convert the array in such a way that if next valid
+number is same as current number, double its value and replace the next number with 0.
+28. Given an array A[] and a number x, check for pair in A[] with sum as x.
+29. Kadane’ Algorithm
+30. Given an input string and a dictionary of words, find out if the input string can be
+segmented into a space-separated sequence of dictionary words
+31. Given two Strings s1 and s2, remove all the characters from s1 which is present in s2.
+32. Find the next greater element for each element in given array.
+33. Given a number, find the next smallest palindrome.
+34. Given an array with repeated numbers, Find the top three repeated numbers
+35. Given two dates, find total number of days between them.
+36. Let 1 represent ‘A’, 2 represents ‘B’, etc. Given a digit sequence, count the number of
+possible decodings of the given digit sequence.
+37. Print all possible words from phone digits
+38. Given two dimensional matrix of integer and print the rectangle can be formed using
+given indices and also find the sum of the elements in the rectangle
+39. Given two dates, find total number of days between them.
+40. Let 1 represent ‘A’, 2 represents ‘B’, etc. Given a digit sequence, count the number of
+possible decodings of the given digit sequence.
+41. array of numbers were given to find a number which has same sum of numbers in it’s
+either side.
+42. Adding a digit to all the digits of a number eg digit=4, number = 2875, o/p= 612119
+43. leetcode/problems/add-digits/description/
+44. Form the largest possible number using the array of numbers.
+45. Lexicographic sorting.
+46. Given a set of numbers and a digit in each iteration, if the digit exists in any of the
+numbers, remove its occurrences and ask for the next digit till the list becomes empty.
+85. Given a N*N binary matrix and the co-ordinate points of start and destination, find the
+number of possible path between them.
+86. Find the largest sum contiguous subarray which should not have negative numbers
+87. Given a string, we have to reverse the string without changing the position of
+punctuations and spaces.
+88. Given a 2D grid of characters, you have to search for all the words in a dictionary by
+moving only along two directions, either right or down. Print the word if it occurs.
+89. Given a string, change the order of words in the string (last string should come first).
+90. Find the shortest path from one element to another element in a matrix using right and
+down moves alone.
+91. Write a program to rotate an n*n matrix 90,180,270,360 degree.
+92. Print longest sequence between same character
+93. Check whether a string is a subsequence of another or not.
+94. leetcode/problems/decode-ways/
+95. leetcode/problems/most-common-word/
+96. leetcode/problems/longest-increasing-subsequence/
+97. Wildcard Pattern Matching
+98. There are n items each with a value and weight. A sack is filled with the weights. In other
+words there is an array with of length n having the values of the items arr[0..-1] and
+another array with weight arr[0..-1].
+99. geeksforgeeks/number-cells-queen-can-move-obstacles-chessborad
+100. geeksforgeeks/word-ladder-length-of-shortest-chain-to-reach-a-targe
+t-word
+101. geeksforgeeks/distinct-permutations-string-set-
+102. geeksforgeeks/job-sequencing-problem-set-1-greedy-algorithm/
+103. leetcode/problems/string-transformation/description/
+104. geeksforgeeks/number-cells-queen-can-move-obstacles-chessborad

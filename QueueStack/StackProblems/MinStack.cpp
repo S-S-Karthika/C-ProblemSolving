@@ -7,9 +7,9 @@ class minimumstack
 {
 private:
     stack<int>mini;
-  int minimum;
+    int minimum;
 public:
-    MinStack(/* args */){
+    MinStack(){
        minimum = INT_MAX; 
     }
 
@@ -55,9 +55,9 @@ public:
   }
 
   int getmin(){
-if (mini.empty()) return -1;
-    return minimum;
-  }
+    if (mini.empty()) return -1;
+        return minimum;
+    }
     
 };
 

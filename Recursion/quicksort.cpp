@@ -6,8 +6,8 @@ int pivotIndex(vector<int>&arr,int low,int high){
 	int i=low+1,j=high;
 	int pivot=arr[low];
 	while(i<=j){
-	     while(arr[i]<=pivot  && i<=high)i++;     //arr[i]>=pivot   for desending
-	     while(arr[j]>pivot && j>=low)j--;        //arr[j]<pivot
+	     while(i <= high && arr[i] <= pivot) i++;     //arr[i]>=pivot   for desending
+	     while(j>=low && arr[j]>pivot )j--;        //arr[j]<pivot
 	     if(i<j)swap(arr[i++],arr[j--]);
 	}
 	swap(arr[low],arr[j]);

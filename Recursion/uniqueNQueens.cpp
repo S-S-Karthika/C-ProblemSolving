@@ -47,7 +47,7 @@ void solve(int col,vector<vector<int>>& board,vector<vector<vector<int>>>& solut
 	}
 
 	for(int row=0;row<N;row++){
-             if(isSafe(board,row,col)){	
+         if(isSafe(board,row,col)){	
 		board[row][col]=1;
 		solve(col+1,board,solutions);
 		board[row][col]=0;

@@ -69,6 +69,33 @@ void palindromesubsequence(int index,string &s,vector<vector<char>>&res,vector<c
 
 }
 
+bool ispalin(string s ,int first,int last){
+
+while(first<last){
+	if(s[first]!=s[last])return false;
+	first++;
+	last--;
+}
+return true;
+}
+
+void palindromesequence3(int pos ,string input,vector<string>& curr,string s){
+	
+	if(pos==input.size()){
+		if(ispalin(s,0,s.size()-1)){
+		curr.push_back(s);
+		
+	}
+		return;
+	}
+	
+	s.push_back(input[pos]);
+	palindromesequence3(pos+1,input,curr,s);
+	s.pop_back();
+	palindromesequence3(pos+1,input,curr,s);
+	
+}
+
 int main(){
 
  string s="aabb";
@@ -92,6 +119,16 @@ int main(){
 		}
 		cout<<" ]";
 	}
+
+
+	//method 3
+	 
+
+ palindromesequence3(0,s,curr,""); 
+
+		for(string& num:curr){
+			cout<<num<<" ";
+		}
  return 0;
 
 

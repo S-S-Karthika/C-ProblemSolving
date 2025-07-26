@@ -29,9 +29,7 @@ vector<int> previousSmallerElement(vector<int>nums){
         {
            st.pop();
         }
-        if(st.empty()){
-            pse[i]=-1;
-        }else{
+        if(!st.empty()){
             pse[i]=st.top();
         }
         st.push(nums[i]);

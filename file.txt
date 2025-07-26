@@ -1,2 +1,124 @@
-data : 12-04-2025 - I am  start coding on recursion that helps to get more paractice in this topic .
-                    I promised my self to not distract and focus on implementation not on the solution and complete my task
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{fontawesome5}
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage[default]{lato}
+\input{glyphtounicode}
+\pdfgentounicode=1
+
+\pagestyle{fancy}
+\fancyhf{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+\setlength{\tabcolsep}{0in}
+\raggedbottom
+\raggedright
+
+% Section Formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\titlerule\vspace{-5pt}]
+
+\begin{document}
+
+%===== HEADING =====
+\begin{center}
+    {\LARGE \textbf{Karthika S S}}\\
+    Namakkal, Tamil Nadu \quad | \quad 
+    \href{mailto:karthikasentil2004@gmail.com}{karthikasentil2004@gmail.com} \quad | \quad +91 8807568935 \\
+    \href{https://linkedin.com/in/karthika-senthil-46886a257}{Linkedin} \quad | \quad 
+    \href{https://leetcode.com/u/Karthika-S-S/}{LeetCode} \quad | \quad 
+    \href{https://github.com/S-S-Karthika}{GitHub} \quad | \quad 
+    \href{https://www.geeksforgeeks.org/user/karthikaseqfum/}{GeeksforGeeks} \quad | \quad \href{https://shimmering-cat-c488d2.netlify.app/}{Portfolio} \quad | \quad
+    \href{https://www.codechef.com/users/bloat_angel_00}{CodeChef}
+\end{center}
+
+%===== OBJECTIVE =====
+\section*{Objective Statement}
+Aspiring software engineer seeking to leverage skills in full-stack development, problem-solving, and object-oriented programming to contribute to scalable and innovative software solutions while continuing to grow professionally in a fast-paced tech environment.
+
+%===== EDUCATION =====
+\section{Education}
+\textbf{Muthayammal Engineering College}, Rasipuram, Namakkal \\
+\textit{Bachelor of Engineering in Computer Science and Engineering (Pursuing)} \hfill 2022 -- 2026 \\
+CGPA: 8.57
+
+\vspace{4pt}
+\textbf{SRV Excel Matriculation School}, Namakkal \\
+SSLC: 90\% \quad | \quad HSC: 80\% \hfill 2019 -- 2022
+
+%===== ACHIEVEMENTS =====
+\section{Achievements}
+\begin{itemize}[leftmargin=0.15in]
+  \item Achieved certification in C++ from HackerRank with distinction (Object-Oriented Programming, STL)
+  \item Solved 200+ problems on LeetCode demonstrating strong data structures and algorithms knowledge
+  \item Top Contributor at GeeksforGeeks (Institute Level)
+  \item Participated in workshops on Low-Level Design by Zealous Tech Corp, Salem
+  \item NPTEL Elite + Silver certified in Distributed Systems and IoT in Cloud
+\end{itemize}
+
+%===== PROJECTS =====
+
+\section{Projects}
+
+\noindent
+\textbf{AI Chatbot using OpenAI Clone (MERN Stack)}
+\hfill
+\href{https://github.com/S-S-Karthika/lancer}{\textit{[Github]}} 
+\href{https://www.linkedin.com/feed/update/urn:li:activity:7298624470884175874/}{\textit{[LinkedIn Post]}} \quad \textit{Jan 2025} \\
+Developed a full-stack chatbot that handles user queries using OpenAI API. Features include chat history management, delete functionality, and real-time communication.
+\vspace{-4pt}
+\begin{itemize}[leftmargin=*, itemsep=2pt]
+  \item \textit{Tech Stack: React, Node.js, Express, MongoDB, OpenAI API}
+\end{itemize}
+
+
+\textbf{Student Certificate Upload Portal} \hfill
+\href{https://github.com/S-S-Karthika/EVENT_PROPOSAL}{\textit{[Github]}} 
+ {Nov 2023} \\
+Built a web application for students to upload and manage certificates securely.
+\begin{itemize}[leftmargin=*]
+  \item Full-stack development with React, Node.js, and MongoDB
+  \item Features: Login/Signup, PDF Upload, Database Integration
+\end{itemize}
+
+
+\textbf{Expense Tracker App (MERN)} \hfill
+\href{https://medium.com/@karthika009/introduction-ac96e6913317}{\textit{[Blog]}}
+\href{https://github.com/S-S-Karthika/expense-tracker}{\textit{[Github]}} \quad \textit {Feb 2025} \\
+Designed and implemented a real-time budget management system.
+\begin{itemize}[leftmargin=*]
+  \item Integrated manual, chat-based, and voice inputs for expenses
+  
+\end{itemize}
+
+%===== COURSEWORK =====
+\section{Relevant Coursework}
+Operating Systems, Object-Oriented Programming, Computer Networks, Database Management Systems (SQL), Low-Level Design, Data Structures and Algorithms
+
+%===== TECHNICAL SKILLS =====
+\section{Technical Skills}
+\textbf{Programming Languages:} C, C++, Java, JavaScript, SQL \\
+\textbf{Frameworks \& Tools:} React, Node.js, Express, MongoDB, Git, VS Code, MySQL, MongoDB Compass, Eclipse \\
+\textbf{Concepts:} REST APIs, CRUD Operations, Software Engineering Principles
+
+%===== SOFT SKILLS =====
+\section{Soft Skills}
+Teamwork, Communication, Time Management, Problem Solving, Adaptability
+
+\end{document}
